@@ -1,0 +1,181 @@
+.pricing {
+    padding: 95px 0;
+    height: 882px;
+}
+@media (max-width:1305px){
+    .pricing {
+        height: 100%;
+    }
+}
+.pricing__container {
+    height: 100%;
+}
+.pricing__top {
+    text-align: center;
+    margin-bottom: 20px;
+}
+@media (max-width:576px){
+    .pricing__top{
+        padding: 0 60px;
+    }
+    .pricing__title {
+        text-align: start;
+    }
+    .pricing__subtitile{
+        text-align: start;
+    }
+}
+.pricing__title {
+    font-weight: 900;
+    font-size: 4rem;
+    margin-bottom: 34px;
+}
+.pricing__subtitile {
+    margin-bottom: 40px;
+    font-size: 32px;
+    font-weight: 700;
+}
+.pricing__subtitile span {
+    color: rgb(108, 92, 231);
+    position: relative;
+    font-size: 32px;
+}
+.pricing__subtitile span::before {
+    content: "";
+    position: absolute;
+    width: 126px;
+    height: 12px;
+    background-color: rgb(253, 203, 110);
+    z-index: -10;
+
+    bottom: 0;
+    left: 0;
+    border-radius: 7px;
+}
+.pricing__bottom {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    height: 100%;
+    gap: clamp(5px, 1.25vw, 16px);
+}
+.pricing__item {
+    position: relative;
+    max-height: 33.5rem;
+    height: 536px;
+    max-width: 370px;
+    width: 100%;
+    padding: 32px 22px 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 16px;
+    background-color: #fff;
+    z-index: 10;
+
+}
+.pricing__item:nth-child(2)::before{
+    position: absolute;
+    content: url(../../img/pricing/wiggle.png);
+    z-index: -20;
+
+    bottom: -40px;
+    left: -30px;
+}
+.pricing__item-text {
+}
+.pricing__iitem-title-box {
+    display: flex;
+    justify-content: space-between;
+}
+.pricing__item-title {
+    color: rgb(108, 92, 231);
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+.pricing__iitem-best {
+    font-weight: 800;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #6c5ce7;
+    border-radius: 16px;
+    cursor: default;
+    width: 90px;
+    height: 32px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+}
+.pricing__item-price {
+    color: rgb(45, 52, 54);
+    margin-bottom: 24px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+.pricing__item-price span {
+    font-size: 3rem;
+   text-transform: capitalize;
+}
+.pricing__item-list {
+    padding-left: 50px;
+}
+.pricing__item-li {
+    margin-bottom: 16px;
+    position: relative;
+    line-height: 40px;
+}
+.pricing__item-li:last-child{
+    margin-bottom: 5px;
+}
+.pricing__item-li::before {
+    content: url(../../img//pricing//check.png);
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    line-height: 20px;
+    background-color: #c2c2c2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    left: -50px;
+    border-radius: 50%;
+}
+
+.pricing__item:nth-child(2) .pricing__item-li::before{
+    background-color: #FDCB6E;
+}
+.pricing__item:nth-child(3) .pricing__item-li::before{
+    background-color: #55EFC4;
+}
+.pricing__item-button {
+    display: inline-block;
+    max-width: 306px;
+    gap: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    height: 64px;
+    color: #858585;
+    border: 1px solid #c2c2c2;
+    border-radius: 16px;
+    font-weight: 700;
+    transition: 0.7s ease-in-out all;
+}
+.pricing__item:hover {
+    box-shadow: 0 16px 24px 0 rgba(38, 50, 56, 0.12);
+}
+.pricing__item:hover .pricing__item-button {
+    color: rgb(255, 255, 255);
+    background-color: #6c5ce7;
+    border: 1px solid #6c5ce7;
+}
+
+.pricing__iitem-title-box {
+}
+.pricing__iitem-best {
+}
