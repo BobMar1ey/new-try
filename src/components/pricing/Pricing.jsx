@@ -1,6 +1,7 @@
 import React from "react";
 import "./Pricing.css";
 export default function Pricing() {
+  const widthWindow = window.innerWidth <= 768;
   return (
     <section className="pricing">
       <div className="pricing__container">
